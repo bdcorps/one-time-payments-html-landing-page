@@ -14,7 +14,7 @@ $(document).ready(function () {
     if (success) {
       $("#payment").hide();
       $("#status").html(
-        `Thank you for purchasing Biller! Access your order <a href="https:/saasbase.dev">here</a>.`
+        `Thank you for purchasing Biller! Access your order <a href="https://saasbase.dev">here</a>.`
       );
     } else {
       $("#status").html(
