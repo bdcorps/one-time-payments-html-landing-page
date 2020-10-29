@@ -13,11 +13,11 @@ $(document).ready(function () {
     var success = urlParams.get("success") === "true";
     if (success) {
       $("#payment").hide();
-      $("#status").text(
-        `Thank you for purchasing Biller! Access your order here.`
+      $("#status").html(
+        `Thank you for purchasing Biller! Access your order <a href="https:/saasbase.dev">here</a>.`
       );
     } else {
-      $("#status").text(
+      $("#status").html(
         "There was an error processing your payment. Please try again."
       );
     }
