@@ -1,36 +1,4 @@
-/*
- * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #000;
-}
-
-h1{font-size:2.25rem;}
-/* Custom default button */
-.btn{font-size: 1.10rem; font-weight: 500;padding:10px 0;}
-
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-}
-
-.btn-outline-secondary{color:#FFF; background-color:#5000FF;}
-
-.lead{
-  color: rgb(97, 97, 97);
-}
-.text-muted{font-size: 0.85rem;
-text-align: left;}
-
-/*
- * Base structure
- */
+/* Globals */
 html,
 body {
   height: 100%;
@@ -42,18 +10,54 @@ body {
   color: #000;
 }
 
+a,
+a:focus,
+a:hover {
+  color: #000;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+/* Styles */
+.btn {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+}
+
+.btn-outline-secondary {
+  color: #fff;
+  background-color: #5000ff;
+}
+
+.lead {
+  color: rgb(97, 97, 97);
+}
+
+.text-muted {
+  font-size: 0.85rem;
+  text-align: left;
+}
+
 .cover-container {
   max-width: 42em;
 }
 
+.hero-img{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
 
-/*
- * Header
- */
-
- /* .form-control {    border: 1px solid #5000FF;} */
- 
- .masthead {
+.masthead {
   margin-bottom: 2rem;
 }
 
@@ -62,13 +66,11 @@ body {
 }
 
 .nav-masthead .nav-link {
-  padding: .25rem 0;
+  padding: 0.25rem 0;
   font-weight: 500;
   color: rgb(146, 146, 146);
   background-color: transparent;
 }
-
-
 
 .nav-masthead .nav-link + .nav-link {
   margin-left: 1rem;
@@ -88,22 +90,16 @@ body {
   }
 }
 
-
-/*
- * Cover
- */
+/* Cover */
 .cover {
   padding: 0 1.5rem;
 }
 .cover .btn-lg {
-  padding: .75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   font-weight: 700;
 }
 
-
-/*
- * Footer
- */
+/* Footer */
 .mastfoot {
   color: #000;
 }
