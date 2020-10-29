@@ -1,26 +1,20 @@
 // Adapted from https://github.com/stripe-samples/checkout-one-time-payments/tree/master/client-only/client/html
 
 var PUBLISHABLE_KEY =
-  "pk_test_51H8rt4JZydwyZEHEJVKNfKacIDRxR0i7YgprjgpREhVNUKr8v2a9yz8S9ZAiWdGKN8vM2KFHYukjTU0eAOzrk1Qe00KyY6NxL4";
+  "pk_test_51H8rImAkSQQctVkLFFZmJad2KISXWeDzpOeJ6ZnbsruFA9yRdzR1VeyjvkQnHn2j5RUoxdhQHeeWmucZrJ7MZLqR00AwkWR4SW";
 
 var DOMAIN = location.href.replace(/[^/]*$/, "");
 
 var stripe = Stripe(PUBLISHABLE_KEY);
 
-var handleResult = function (result) {
-  if (result.error) {
-    console.log(result.error.message);
-  }
-};
-
 $(document).ready(function () {
   var urlParams = new URLSearchParams(window.location.search);
   if (urlParams.has("success")) {
-    var success = urlParams.get("success") == "true";
-    if (success) {
+    var session_id = urlParams.get("session_id");
+    if (session_id) {
       $("#payment").hide();
       $("#status").text(
-        "Thank you for purchasing Biller! Your order will arrive within the hour."
+        `Thank you for purchasing Biller! Access your order here.`
       );
     } else {
       $("#status").text(
@@ -38,9 +32,15 @@ $(document).ready(function () {
       .redirectToCheckout({
         mode: checkoutMode,
         lineItems: items,
-        successUrl: DOMAIN + "main.html?success=true",
-        cancelUrl: DOMAIN + "main.html?success=false",
+        successUrl: DOMAIN + "index.html?success=true",
+        cancelUrl: DOMAIN + "index.html?success=false",
       })
       .then(handleResult);
   });
+
+  var handleResult = function (result) {
+    if (result.error) {
+      console.log(result.error.message);
+    }
+  };
 });
