@@ -1,4 +1,4 @@
-### Pre-Order Landing Page with One-Time Stripe Payment
+### Pre-Order Landing Page with One-Time Stripe Payments
 Collect pre-sales revenue using this pre-built landing page as a way to validate a new product idea. Written guide available at: [saasbase.dev](https://saasbase.dev)
 
 ## Features
