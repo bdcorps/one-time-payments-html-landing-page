@@ -10,8 +10,8 @@ var stripe = Stripe(PUBLISHABLE_KEY);
 $(document).ready(function () {
   var urlParams = new URLSearchParams(window.location.search);
   if (urlParams.has("success")) {
-    var session_id = urlParams.get("session_id");
-    if (session_id) {
+    var success = urlParams.get("success") === "true";
+    if (success) {
       $("#payment").hide();
       $("#status").text(
         `Thank you for purchasing Biller! Access your order here.`
