@@ -1,9 +1,9 @@
+# Pre-Order Landing Page with One-Time Stripe Payments
+Collect pre-sales revenue using this pre-built landing page as a way to validate a new product idea.
+
 Running live at: https://lucid-ramanujan-f21cd3.netlify.app/
 
 Full Guide at: [saasbase.dev](https://saasbase.dev)
-
-# Pre-Order Landing Page with One-Time Stripe Payments
-Collect pre-sales revenue using this pre-built landing page as a way to validate a new product idea.
 
 ## Features
 - Easy to customize
