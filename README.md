@@ -5,6 +5,8 @@ Running live at: https://lucid-ramanujan-f21cd3.netlify.app/
 
 Full Guide at: [saasbase.dev](https://saasbase.dev)
 
+![Screenshot](/../master/screenshots/web.png?raw=true "Landing Page Screenshot")
+
 ## Features
 - Easy to customize
 - Responsive HTML/CSS
